@@ -1,0 +1,12 @@
+.save{
+    width: 100%;
+    background-color: black;
+    height: 40px;
+    color: white;
+}
+.additional{
+border-radius: 10px;
+padding: 34px 33px 6px 23px;
+background: var(--tp-common-white);
+box-shadow: 0px 1px 1px 0px rgba(3, 11, 30, 0.14), 0px 1px 2px 1px rgba(3, 11, 30, 0.06);
+}

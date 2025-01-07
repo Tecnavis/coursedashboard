@@ -14,7 +14,7 @@ const options = [
 export default function CourseInfoSelectCategory() {
     return (
         <Select
-            placeholder="Search Course Category. ex. Design, Development, Business"
+            placeholder="Course Category"
             className="tpd-select2"
             options={options}
             isMulti

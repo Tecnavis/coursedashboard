@@ -8,17 +8,17 @@ export default function CourseBuilderArea() {
 	const { handleAnnounceAddEditModal } = useGlobalContext();
 	return (
 		<div className="accordion-item">
-			<h2 className="accordion-header">
+			<h6 className="accordion-header">
 				<button className="accordion-button collapsed tpd-new-course-heading-title " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-					Course Builder
+					ADD NEW LESSON
 				</button>
-			</h2>
+			</h6>
 			<div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse">
 				<div className="accordion-body">
 					<div className="tpd-new-course-modal-btn">
 
 						{/* modal-announcement-btn */}
-						<button type="button" className="btn btn-primary" onClick={() => handleAnnounceAddEditModal()} data-bs-whatever="@fat"><span><PlusFiveSvg /></span> Add New Topic</button>
+						<button type="button" className="btn btn-primary" onClick={() => handleAnnounceAddEditModal()} data-bs-whatever="@fat"><span><PlusFiveSvg /></span> Add New Lesson</button>
 						{/* modal-announcement-btn-end */}
 
 						{/* announcement modal */}
