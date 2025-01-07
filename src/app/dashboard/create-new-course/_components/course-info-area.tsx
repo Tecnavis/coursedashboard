@@ -166,6 +166,7 @@ export default function CourseInfoArea() {
                     <option>Select</option>
                     <option>Instructor 1</option>
                     <option>Instructor 2</option>
+                    <option>Instructor 2</option>
                   </select>
                 </div>
               </div>
