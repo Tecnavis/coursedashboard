@@ -15,19 +15,17 @@ const dashboardMenuData = [
 			{ title: "My Profile", icon: <ProfileSvg />, href: "/dashboard/instructor-profile" },
 			{ title: "Enrolled Courses", icon: <EnrolledCourseSvg />, href: "/dashboard/instructor-enroll-course" },
 			{ title: "Wishlist", icon: <WishlistSvg />, href: "/dashboard/instructor-wishlist" },
-			{ title: "Reviews", icon: <ReviewSvg />, href: "/dashboard/instructor-reviews" },
 			{ title: "My Quiz Attempts", icon: <QuizAttemptsSvg />, href: "/dashboard/instructor-my-quiz" },
 			{ title: "Order History", icon: <OrderHistorySvg />, href: "/dashboard/instructor-order" },
-			{ title: "Question & Answer", icon: <QuestionAnswerSvg />, href: "/dashboard/instructor-question-answer" },
-			{ title: "Calendar", icon: <CalenderSvg />, href: "/dashboard/instructor-calender" }
+			// { title: "Calendar", icon: <CalenderSvg />, href: "/dashboard/instructor-calender" }
 		]
 	},
 	{
 		section: "INSTRUCTOR", items: [
 			{ title: "My Courses", icon: <CourseSvg />, href: "/dashboard/instructor-my-course" },
-			{ title: "My Bundles", icon: <BundleSvg />, href: "/dashboard/instructor-my-bundle" },
+			// { title: "My Bundles", icon: <BundleSvg />, href: "/dashboard/instructor-my-bundle" },
 			{ title: "Announcements", icon: <AnnouncementSvg />, href: "/dashboard/instructor-announcements" },
-			{ title: "Employees & Students", icon: <QuizAttemptsTwoSvg />, href: "/dashboard/instructor-quiz" },
+			{ title: "Quiz Attempts", icon: <QuizAttemptsTwoSvg />, href: "/dashboard/instructor-quiz" },
 			{ title: "Assignments", icon: <AssignmentSvg />, href: "/dashboard/instructor-assignment" },
 		]
 	},
@@ -35,8 +33,11 @@ const dashboardMenuData = [
 		section: "MAIN ADMIN", items: [
 			{ title: "Analytics", icon: <AnalyticSvg />, href: "/dashboard/instructor-analytics-overview" },
 			{ title: "All Course", icon: <CourseSvg />, href: "/course-with-filter" },
+			{ title: "Employee & Students", icon: <ProfileSvg />, href: "/dashboard/instructor-question-answer" },
 			{ title: "All Category", icon: <WithdrawalSvg />, href: "/dashboard/instructor-withdrawal" },
 			{ title: "Certificate", icon: <CertificateSvg />, href: "/dashboard/instructor-certificate" },
+			{ title: "Reviews", icon: <ReviewSvg />, href: "/dashboard/instructor-reviews" },
+
 			// { title: "My Bundles", icon: <BundleSvg />, href: "/dashboard/instructor-my-bundle" },
 			// { title: "Announcements", icon: <AnnouncementSvg />, href: "/dashboard/instructor-announcements" },
 			// { title: "Quiz Attempts", icon: <QuizAttemptsTwoSvg />, href: "/dashboard/instructor-quiz" },

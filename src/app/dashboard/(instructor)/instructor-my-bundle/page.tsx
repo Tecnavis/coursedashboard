@@ -17,7 +17,7 @@ export default function InstructorMyBundlePage() {
 
         {/* dashboard content area start */}
         <DashboardContentWrapper>
-           <InstructorMyCourseArea bundleCourse={true}/>
+           <InstructorMyCourseArea />
         </DashboardContentWrapper>
         {/* dashboard content area end */}
 

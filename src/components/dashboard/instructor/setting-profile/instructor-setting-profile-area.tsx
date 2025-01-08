@@ -37,14 +37,14 @@ export default function InstructorSettingProfileArea({studentProfile}: IProps) {
                 </div>
                 <div className="col-lg-6">
                   <div className="tpd-input">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Caster" />
+                    <label>Role</label>
+                    <input type="text" placeholder="Role" />
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="tpd-input">
-                    <label>User Name</label>
-                    <input type="text" placeholder="Instructor" />
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" />
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -53,21 +53,15 @@ export default function InstructorSettingProfileArea({studentProfile}: IProps) {
                     <input type="text" placeholder="(+44) 433 962 004" />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-12">
                   <div className="tpd-input">
                     <label>Skill/Occupation</label>
                     <input type="text" placeholder="Full Stack Developer" />
                   </div>
                 </div>
-                <div className="col-lg-6">
-                  <div className="tpd-input">
-                    <label>Display name publicly as</label>
-                    <input type="text" placeholder="Instructor" />
-                  </div>
-                </div>
                 <div className="col-lg-12">
                   <div className="tpd-input">
-                    <label>About me</label>
+                    <label>Bio</label>
                     <textarea placeholder="I'm the Front-End Developer for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
                   </div>
                 </div>
@@ -78,13 +72,6 @@ export default function InstructorSettingProfileArea({studentProfile}: IProps) {
               <div className="tpd-setting-cartificate-upload d-flex align-items-center">
                 <div className="tpd-setting-cartificate-thumb">
                   <Image src={Certificate_img} alt="certificate-img" />
-                </div>
-                <div className="tpd-setting-cartificate-content">
-                  <p>Size: 700x430 pixels</p>
-                  <span className="upload-btn">
-                    <input id="tpd-setting-cartificate-input" type="file" accept="image/png, image/jpeg" />
-                    <label htmlFor="tpd-setting-cartificate-input"><span><UploadSvg /></span> Upload Image</label>
-                  </span>
                 </div>
               </div>
               <div className="tpd-setting-cartificate-btn">

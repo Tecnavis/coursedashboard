@@ -58,7 +58,6 @@ export default function SectionArea({title='Quiz Attempts'}: IProps) {
                                 />
                             </div>
                         </div>
-                        //
                         <div className="tpd-order-date-input mb-30 ml-10">
                             <form action="#">
                                 <DatePicker date={date} setDate={setDate} />
