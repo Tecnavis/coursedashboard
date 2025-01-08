@@ -1,24 +1,60 @@
-import { UploadTwoSvg } from "@/components/svg";
+'use client';
+import Image from "next/image";
+import React from "react";
+import file_icon from "@/assets/img/dashboard/bg/select-file-icon.png";
+import "./style.css"
+export default function CourseAdditionalInfo() {
 
-
-export default function CourseAttachment() {
-    return (
-        <div className="accordion-item">
-            <h2 className="accordion-header">
-                <button className="accordion-button collapsed tpd-new-course-heading-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                    Course Attachments
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseFive" className="accordion-collapse collapse">
-                <div className="accordion-body">
-                    <div className="tpd-new-course-instructor">
-                        <span className="upload-btn">
-                            <input id="tpd-new-course-file" type="file" accept="image/png, image/jpeg" />
-                            <label htmlFor="tpd-new-course-file"><span><UploadTwoSvg /></span> Upload Attachments</label>
-                        </span>
-                    </div>
-                </div>
+  return (
+    <div className="">
+          
+      {/* <div id="panelsStayOpen-collapseSix" className="accordion-collapse collapse"> */}
+      {/* <div className=""> */}
+      <div className="">
+        <div className="tpd-new-course-categories">
+          <div className="">
+            <label>Certificate</label>
+            <div
+              className="tpd-new-course-file-content text-center"
+              style={{
+                backgroundImage:
+                  "url(/assets/img/dashboard/bg/select-file.png)",
+              }}
+            >
+              <div className="tpd-new-course-file-thumb mb-15">
+                <Image src={file_icon} alt="file-icon" />
+              </div>
+              <span className="upload-btn">
+                <input
+                  id="tpd-new-course-file-input"
+                  type="file"
+                  accept="image/png, image/jpeg"
+                />
+                <label htmlFor="tpd-new-course-file-input">
+                  Choose Image to Upload
+                </label>
+              </span>
             </div>
+          </div>
+          {/* </div> */}
+          <br />
+          <div className="tpd-input">
+            <label>Name </label>
+            <input
+              style={{ width: "100%" }}
+              name="targetedAudience"
+              placeholder=" Category Name"
+            />
+          </div>
+          <div className="tpd-input height-auto">
+          <button className="save">
+              Save
+            </button>
+          </div>
+          
         </div>
-    )
+      </div>
+      {/* </div> */}
+    </div>
+  );
 }

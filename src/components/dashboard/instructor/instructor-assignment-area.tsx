@@ -68,7 +68,7 @@ export default function InstructorAssignmentArea() {
    return (
       <>
          {/* section area start */}
-         <SectionArea title="Assignments" />
+         <SectionArea title="Assignmentss" />
          {/* section area end */}
 
          {/* assignment area start */}

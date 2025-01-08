@@ -38,7 +38,7 @@ export default function CourseInfoArea() {
                     borderRadius: "8px",
                   }}
                 >
-                  <option>Course 1</option>
+                  <option>Select Course</option>
                   <option>Course 2</option>
                   <option>Course 3</option>
                 </select>
@@ -148,13 +148,13 @@ export default function CourseInfoArea() {
                       borderRadius: "8px",
                     }}
                   >
-                    <option>Select</option>
+                    <option>Select Status</option>
                     <option>Active</option>
                     <option>Inactive</option>
                   </select>
                 </div>
-                <div className="tpd-input col-12">
-                  <label>Status</label>
+                <div className="tpd-input col-6">
+                  <label>Instructor</label>
                   <select
                     style={{
                       width: "100%",
@@ -163,10 +163,26 @@ export default function CourseInfoArea() {
                       borderRadius: "8px",
                     }}
                   >
-                    <option>Select</option>
+                    <option>Select Instructor</option>
                     <option>Instructor 1</option>
                     <option>Instructor 2</option>
                     <option>Instructor 2</option>
+                  </select>
+                </div>
+                <div className="tpd-input col-6">
+                  <label>Language</label>
+                  <select
+                    style={{
+                      width: "100%",
+                      height: "44px",
+                      borderColor: "#e4dede;",
+                      borderRadius: "8px",
+                    }}
+                  >
+                    <option>Select Language</option>
+                    <option>English</option>
+                    <option>French</option>
+                    <option>Spanish</option>
                   </select>
                 </div>
               </div>

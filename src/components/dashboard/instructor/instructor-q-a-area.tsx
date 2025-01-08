@@ -150,7 +150,7 @@ export default function InstructorQuestionAnswerArea() {
             <div className="row">
                <div className="col-lg-6">
                   <div className="tp-dashboard-section">
-                     <h2 className="tp-dashboard-title">Question & Answer</h2>
+                     <h2 className="tp-dashboard-title">Questions & Answer</h2>
                   </div>
                </div>
                <div className="col-lg-12">

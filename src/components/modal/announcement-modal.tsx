@@ -23,7 +23,7 @@ export default function AnnouncementModal() {
       <>
          <Modal className="tpd-modal-announcement" show={showAnnounceAddEditModal} onHide={handleAnnounceAddEditModal} centered={true}>
             <div className="modal-header">
-               <h4 className="tpd-modal-title" id="exampleModaltow">{edit ? 'Edit' : 'Create'} Announcement</h4>
+               <h4 className="tpd-modal-title" id="exampleModaltow">{edit ? 'Edit' : 'Create'} New Lessons</h4>
                <button onClick={() => handleAnnounceAddEditModal()} type="button" className="tpd-modal-btn-close" data-bs-dismiss="modal" aria-label="Close">
                   <span>
                      <CloseFourSvg />
@@ -33,16 +33,24 @@ export default function AnnouncementModal() {
             <div className="modal-body">
                <form>
                   <div className="tpd-input-white mb-20">
-                     <label>Course Name</label>
-                     <input type="text" placeholder="Announcement" value={announcement} onChange={(e) => setAnnouncement(e.target.value)} />
+                     <label>Course Title</label>
+                     <input type="text" placeholder="Course Title" value={announcement} onChange={(e) => setAnnouncement(e.target.value)} />
+                  </div><hr/>
+                  <div className="tpd-input-white mb-20">
+                     <label>Course Select</label>
+                     <select style={{width:"100%",height:"45px",border:"1px solid #e6e8f0"}}>
+                        <option>Course 1</option>
+                        <option>Course 1</option>
+                        <option>Course 1</option>
+                     </select>
                   </div>
                   <div className="tpd-input-white mb-20">
-                     <label>Course Title</label>
-                     <input type="text" placeholder="course title" value={title} onChange={(e) => setTitle(e.target.value)} />
+                     <label>Course Video</label>
+                     <input type="text" placeholder="course link" value={title} onChange={(e) => setTitle(e.target.value)} />
                   </div>
-                  <div className="tpd-input-white">
-                     <label htmlFor="message-text" className="col-form-label">Summary</label>
-                     <textarea className="form-control" id="message-text" placeholder="Lorem Ipsum...."></textarea>
+                  <div className="tpd-input-white mb-20">
+                     <label> Video Name</label>
+                     <input type="text" placeholder="Video Name" value={title} onChange={(e) => setTitle(e.target.value)} />
                   </div>
                   <div className="tpd-new-course-box-duration d-flex align-items-end">
               <div className="tpd-input mr-20">
@@ -81,12 +89,15 @@ export default function AnnouncementModal() {
                               </li>
                            </ul>
                         </div>
-                     </div>
+                     </div><br/>
+                     <button className="save">
+              Add + 
+            </button>
                </form>
             </div>
             <div className="modal-footer">
                <button type="button" data-bs-dismiss="modal" aria-label="Close" className="tpd-btn-cancel">Cancel</button>
-               <button type="submit" className="tpd-btn-edit ml-10">Publish</button>
+               <button type="submit" className="tpd-btn-edit ml-10">Save</button>
             </div>
             
          </Modal>

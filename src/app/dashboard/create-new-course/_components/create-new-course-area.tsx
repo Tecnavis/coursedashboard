@@ -2,6 +2,8 @@ import { PenThreeSvg } from "@/components/svg";
 import CourseAdditionalInfo from "./course-additional-info";
 import CourseBuilderArea from "./course-builder-area";
 import CourseInfoArea from "./course-info-area";
+import CourseAttachment from "./course-attachment";
+import CourseCertificate from "./course-certificate";
 import "./style.css"
 export default function CreateNewCourseArea() {
   return (
@@ -35,6 +37,13 @@ export default function CreateNewCourseArea() {
                     <li>
                       <CourseBuilderArea />
                     </li>
+                  </ul>
+                </div>
+                <br />
+                <div className="additional">
+                  <ul>
+                  <h6 style={{textAlign:"center"}}>Add New Certificate</h6>
+                      <CourseAttachment />
                   </ul>
                 </div>
                 <br />

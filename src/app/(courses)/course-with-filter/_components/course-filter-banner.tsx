@@ -23,7 +23,7 @@ export default function CourseFilterBanner({spacing='pt-180 pb-220'}: IProps) {
                 <span className="color">All Courses</span>
               </div>
               <h3 className="tp-breadcrumb__title">All Courses</h3>
-              <p>We have the largest collection of <span>{state.courses.length}</span> courses</p>
+              <p>We have the largest collection of  XXX<span>{state.courses.length}</span> courses</p>
             </div>
             <div className="tp-course-filter-wrap p-relative">
               <div className="row">
